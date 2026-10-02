@@ -11,3 +11,14 @@ def get_user(username):
 
 
 # AI review test
+
+
+query = f"SELECT * FROM users WHERE username = '{username}'"
+    cursor.execute(query)
+
+
+query = f"SELECT * FROM users WHERE username = '{username}'"
+    cursor.execute(query)
+query = f"SELECT * FROM users WHERE username = '{username}'"
+    cursor.execute(query)
+
