@@ -8,3 +8,6 @@ def get_user(username):
     cursor.execute(query)
 
     return cursor.fetchone()
+
+
+# AI review test
