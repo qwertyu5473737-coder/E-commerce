@@ -1,5 +1,36 @@
-def get_user(username, users):
-    for user in users:
-        if user["username"] == username:
-            return user
-    return None
+import sqlite3
+
+def get_user(username):
+    connection = sqlite3.connect("users.db")
+    cursor = connection.cursor()
+
+    query = f"SELECT * FROM users WHERE username = '{username}'"
+    cursor.execute(query)
+
+    return cursor.fetchone()
+
+
+# AI review test
+
+
+query = f"SELECT * FROM users WHERE username = '{username}'"
+    cursor.execute(query)
+
+
+query = f"SELECT * FROM users WHERE username = '{username}'"
+    cursor.execute(query)
+query = f"SELECT * FROM users WHERE username = '{username}'"
+    cursor.execute(query)
+
+get_user(username):
+    connection = sqlite3.connect("users.db")
+    cursor = connection.cursor()
+
+    query = f"SELECT * FROM users WHERE username = '{username}'"
+    cursor.execute(query)get_user(username):
+    connection = sqlite3.connect("users.db")
+    cursor = connection.cursor()
+
+    query = f"SELECT * FROM users WHERE username = '{username}'"
+    cursor.execute(query)
+
